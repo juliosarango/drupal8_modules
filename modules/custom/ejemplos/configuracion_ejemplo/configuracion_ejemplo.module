@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains configuracion_ejemplo.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function configuracion_ejemplo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the configuracion_ejemplo module.
+    case 'help.page.configuracion_ejemplo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Revision de Configuration Manager') . '</p>';
+      return $output;
+
+    default:
+  }
+}

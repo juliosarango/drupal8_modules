@@ -1,0 +1,5 @@
+name: Pagina Ejemplo
+type: module
+description: Modulo para cargar una pagina desde la url
+core: 8.x
+package: Ejemplos

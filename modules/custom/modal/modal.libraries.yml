@@ -1,0 +1,8 @@
+modal:
+    version: 1
+    js:
+        js/crutch.js: {}
+    dependencies:
+        - core/jquery
+        - core/ajax        
+        

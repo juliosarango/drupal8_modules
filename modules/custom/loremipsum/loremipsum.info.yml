@@ -1,0 +1,5 @@
+name: loremipsum
+type: module
+description: Modulo para la generacion de texto tipo lorem ipsum
+core: 8.x
+package: Custom

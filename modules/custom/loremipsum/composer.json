@@ -1,0 +1,14 @@
+{
+  "name": "drupal/loremipsum",
+  "type": "drupal-module",
+  "description": "Modulo para la generacion de texto tipo lorem ipsum",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/loremipsum",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/loremipsum",
+    "source": "http://cgit.drupalcode.org/loremipsum"
+  },
+  "require": { }
+}

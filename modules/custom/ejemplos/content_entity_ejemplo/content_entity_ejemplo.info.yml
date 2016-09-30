@@ -1,0 +1,5 @@
+name: content_entity_ejemplo
+type: module
+description: Entidades, Content entities y configuracion entities
+core: 8.x
+package: ejemplos

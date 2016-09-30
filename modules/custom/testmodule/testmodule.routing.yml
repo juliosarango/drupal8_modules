@@ -1,0 +1,8 @@
+
+testmodule.default_controller_contenido:
+  path: '/testmodule/hello/{num}'
+  defaults:
+    _controller: '\Drupal\testmodule\Controller\DefaultController::contenido'
+    _title: 'contenido'
+  requirements:
+    _permission: 'access content'

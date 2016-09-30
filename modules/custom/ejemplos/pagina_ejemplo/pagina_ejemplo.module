@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains pagina_ejemplo.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pagina_ejemplo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pagina_ejemplo module.
+    case 'help.page.pagina_ejemplo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo para cargar una pagina desde la url') . '</p>';
+      return $output;
+
+    default:
+  }
+}

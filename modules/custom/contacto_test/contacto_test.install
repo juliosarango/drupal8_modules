@@ -1,0 +1,108 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the contacto_test module
+ * 
+ */
+
+/**
+ * Implements hook_install().
+ * Creates some default entries on this module custom table.
+ * @see hook_install()
+ * @ingroup contact_test
+ * 
+ */
+
+function contacto_test_install() {
+    //add default entry
+    $fields = array(
+        'name' => 'Jhon',
+        'surname' => 'Doe',
+        'age' => 0,
+    );
+    db_insert('contacto_test')
+        ->fields($fields)
+        ->execute();
+    
+    //add anothen entry
+    $fields = array(
+        'name' => 'John',
+        'surname' => 'Roe',
+        'age' => 45,
+        'uid' => 1,
+    );
+    db_insert('contacto_test')
+        ->fields($fields)
+        ->execute();                
+}
+
+/**
+ * Implements hook_schema().
+ * Define the database tables used by this module
+ * 
+ * @see hook_schema()
+ * 
+ * @ingroup contacto_test
+ */
+
+function contacto_test_schema() {
+    
+    $schema['contacto_test'] = array(
+        'description' => 'Store example persona entries',
+        'fields' => array(
+            'pid' => array(
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary key, Unique person ID',
+            ),
+            'uid' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'creator users {users}.uid',
+            ),
+            'name' => array(
+                'type' => 'varchar',
+                'length' => '100',
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'Name of the person',
+            ),
+            'surname' => array(
+                'type' => 'varchar',
+                'length' => '100',
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'Surname of the person',
+            ),
+            'age' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'size' => 'tiny',
+                'description' => 'the age of the person in years'
+            ),
+        ),
+        
+        'primary key' => array('pid'),
+        'indexes' => array(
+            'name' => array('name'),
+            'surname' => array('surname'),
+            'age' => array('age'),
+        ),        
+    );
+    
+    return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ * Delete table contact_test from contacto_test module
+ * 
+ */
+
+//function contacto_test_uninstall() {
+//    db_drop_table('contacto_test')->execute();
+//}
+

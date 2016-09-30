@@ -1,0 +1,6 @@
+configuracion_ejemplo.settings:
+    type: config_object
+    label: 'Ejemplo de configuracion'
+    mapping: configuracion_ejemplo.email_address
+    type: string
+    label: 'Este es un ejemplo de email_addres'

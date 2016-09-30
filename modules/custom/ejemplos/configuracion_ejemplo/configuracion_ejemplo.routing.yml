@@ -1,0 +1,9 @@
+
+configuracion_ejemplo.form:
+  path: '/configuracion_ejemplo/form/configuracion_ejemplo'
+  defaults:
+    _form: '\Drupal\configuracion_ejemplo\Form\ConfiguracionEjemploForm'
+    _title: 'Formulario de Configuración'
+  requirements:
+    _access: 'TRUE'
+  

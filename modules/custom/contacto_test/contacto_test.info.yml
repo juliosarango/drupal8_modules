@@ -1,0 +1,5 @@
+name: contacto_test
+type: module
+description: Gestionar contactos
+core: 8.x
+package: Custom

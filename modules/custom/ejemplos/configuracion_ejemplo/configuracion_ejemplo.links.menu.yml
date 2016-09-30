@@ -1,0 +1,4 @@
+pagina_ejemplo_configurable.form:
+    title: Ejemplo de Formulario de Configuracion
+    route_name: configuracion_ejemplo.form
+    parent: system.admin_reports

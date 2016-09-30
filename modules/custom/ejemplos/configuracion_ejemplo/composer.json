@@ -1,0 +1,14 @@
+{
+  "name": "drupal/configuracion_ejemplo",
+  "type": "drupal-module",
+  "description": "Revision de Configuration Manager",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/configuracion_ejemplo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/configuracion_ejemplo",
+    "source": "http://cgit.drupalcode.org/configuracion_ejemplo"
+  },
+  "require": { }
+}

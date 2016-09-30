@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains modal.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function modal_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the modal module.
+    case 'help.page.modal':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Prueba de integración de Modales popup') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_html().
+ * 
+ */
+function modal_preprocess_html(&$variables) {
+    
+    $variables['page']['#attached']['library'][] = 'modal/modal';
+    $variables['page']['#attached']['library'][] = 'core/drupal.ajax';
+}

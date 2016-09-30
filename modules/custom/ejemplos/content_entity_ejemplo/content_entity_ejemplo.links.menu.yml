@@ -1,0 +1,11 @@
+entity.contact.collection:
+    title: 'Content entity example: Contacts Listing'
+    route_name: entity.contact.collection
+    description: 'List Contacts'
+    weight: 10
+    
+entity.contact.settings:
+    title: 'Contact Settings'
+    description: 'Configure contaqct entity'
+    route_name: entity.contact.settings
+    parent: system.admin_structure

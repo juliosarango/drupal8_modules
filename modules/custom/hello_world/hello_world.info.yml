@@ -1,0 +1,5 @@
+name: hello_world
+type: module
+description: Primer modulo de Saludo
+core: 8.x
+package: Custom

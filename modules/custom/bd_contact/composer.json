@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bd_contact",
+  "type": "drupal-module",
+  "description": "BD custom contact form",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bd_contact",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bd_contact",
+    "source": "http://cgit.drupalcode.org/bd_contact"
+  },
+  "require": { }
+}

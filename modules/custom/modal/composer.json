@@ -1,0 +1,14 @@
+{
+  "name": "drupal/modal",
+  "type": "drupal-module",
+  "description": "Prueba de integración de Modales popup",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/modal",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/modal",
+    "source": "http://cgit.drupalcode.org/modal"
+  },
+  "require": { }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/contacto_test",
+  "type": "drupal-module",
+  "description": "Gestionar contactos",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/contacto_test",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/contacto_test",
+    "source": "http://cgit.drupalcode.org/contacto_test"
+  },
+  "require": { }
+}

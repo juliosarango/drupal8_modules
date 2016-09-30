@@ -1,0 +1,7 @@
+configuracion_ejemplo:
+    email_address: form@examples.com
+    name: Default name
+    address: 
+        line_1: Joel gomez polanco
+        city: quito
+        zip_code: 171701

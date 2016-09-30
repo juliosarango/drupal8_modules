@@ -1,0 +1,16 @@
+bd_contact.admin_bd_contact_list:
+  title: 'Listado de contactos'
+  route_name: bd_contact.list
+  description: 'Listado de contactos enviados'
+
+bd_contact.admin_bd_contact_add:
+  title: 'Añadir contactos'
+  route_name: bd_contact.bd_contact_add
+  description: 'Añadir nuevos contactos'  
+  
+bd_contact.admin_bd_contact_delete:
+  title: 'Eliminar contactos'
+  route_name: bd_contact.bd_contact_delete
+  route_parameters:
+      id: 0
+  description: 'Eliminar contactos'  

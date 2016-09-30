@@ -1,0 +1,5 @@
+name: bd_contact
+type: module
+description: BD custom contact form
+core: 8.x
+package: Custom

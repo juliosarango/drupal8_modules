@@ -1,0 +1,33 @@
+
+pagina_ejemplo.description:
+  path: '/ejemplos/pagina-ejemplo'
+  defaults:
+    _controller: '\Drupal\pagina_ejemplo\Controller\PaginaEjemploController::description'
+    _title: 'Descripcion de la pagina'
+  requirements:
+    _permission: 'access content'
+    
+pagina_ejemplo.simple:
+  path: '/ejemplos/pagina-ejemplo/simple'
+  defaults:
+    _controller: '\Drupal\pagina_ejemplo\Controller\PaginaEjemploController::simple'
+    _title: 'Descripción simple de la página'
+  requirements:
+    _permission: 'access simple page'
+    
+pagina_ejemplo.arguments:
+  path: '/ejemplos/pagina-ejemplo/arguments/{first}/{second}'
+  defaults:
+    _controller: '\Drupal\pagina_ejemplo\Controller\PaginaEjemploController::arguments'
+    _title: 'Página con argumentos'
+  requirements:
+    _permission: 'access arguments page'    
+
+pagina_ejemplo.form:
+  path: '/ejemplos/pagina-ejemplo/form'
+  defaults:
+    _form: '\Drupal\pagina_ejemplo\Form\PaginaEjemploForm'
+    _title: 'PaginaEjemploForm'
+  requirements:
+    _access: 'TRUE'
+  

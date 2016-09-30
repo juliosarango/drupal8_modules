@@ -1,0 +1,64 @@
+contacto_test:
+  path: 'contacto_test'
+  defaults:
+    _title: 'Ejemplo de contactos'
+    _controller: '\Drupal\contacto_test\Controller\ContactoTestController::entryList'
+  requirements:
+    _permission: 'access content'
+
+contacto_list:
+    path: 'contacto_test/list'
+    defaults:
+        _title: 'List of Entries'
+        _controller: '\Drupal\contacto_test\Controller\ContactoTestController::entryList'
+    requirements:
+        _permission: 'access content'
+        
+contacto_add:
+    path: 'contacto_test/add'
+    defaults:
+        _title: 'Add Entry'
+        _form: '\Drupal\contacto_test\Form\ContactoTestAddForm'
+    requirements:
+        _permission: 'access content'
+        
+contacto_update:
+    path: 'contacto_test/update'
+    defaults:
+        _title: 'Update entry'
+        _form: '\Drupal\contacto_test\Form\ContactoTestUpdateForm'
+    requirements:
+        _permission: 'access content'
+        
+contacto_advanced:
+    path: 'contacto_test/advanced'
+    defaults:
+        _title: 'Advanced List'
+        _controller: '\Drupal\contacto_test\Controller\ContactoTestController::entryAdvancedList'
+    requirements:
+        _permission: 'access content'
+contacto_test.contacto_test_add_form:
+  path: 'contacto_test/add'
+  defaults:
+    _form: '\Drupal\contacto_test\Form\ContactoTestAddForm'
+    _title: 'ContactoTestAddForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+contacto_test.contacto_test_controller_entryList:
+  path: 'contacto_test/list'
+  defaults:
+    _controller: '\Drupal\contacto_test\Controller\ContactoTestController::entryList'
+    _title: 'List'
+  requirements:
+    _permission: 'access content'
+
+contacto_test.contacto_test_update_form:
+  path: '/contacto_test/form/contacto_test_update'
+  defaults:
+    _form: '\Drupal\contacto_test\Form\ContactoTestUpdateForm'
+    _title: 'ContactoTestUpdateForm'
+  requirements:
+    _access: 'TRUE'
+  

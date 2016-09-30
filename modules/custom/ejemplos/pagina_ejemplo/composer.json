@@ -1,0 +1,14 @@
+{
+  "name": "drupal/pagina_ejemplo",
+  "type": "drupal-module",
+  "description": "Modulo para cargar una pagina desde la url",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/pagina_ejemplo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pagina_ejemplo",
+    "source": "http://cgit.drupalcode.org/pagina_ejemplo"
+  },
+  "require": { }
+}

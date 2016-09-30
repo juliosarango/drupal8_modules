@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains bd_contact.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bd_contact_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bd_contact module.
+    case 'help.page.bd_contact':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('BD custom contact form') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * implements hook_menu()
+ */
+
+function bd_contact_menu() {
+    return array(
+        'admin/content/bd_contact' => array(
+            'title' => 'BD Contact submissions',
+            'route_name' => 'bd_contact_list',
+        ),
+        'admin/content/bd_contact/add' => array(
+            'title' => 'BD Contact',
+            'route_name' => 'bd_contact_add',
+        ),
+        'admin/content/bd_contact/delete/%' => array(
+            'title' => 'Delete BD Contact submission',
+            'route_name' => 'bd_contact_delete',
+        ),
+    );
+}
+
+/**
+ * implements hook_permission()
+ */
+
+function bd_contact_permission() {
+    return array(
+        'manage bd contact forms' => array(
+            'title' => t('Manage bd contact form'),
+        ),
+        'use bd contact form' => array(
+            'title' => t('Use the bd contact form')
+        ),
+    );
+}

@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains testmodule.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function testmodule_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the testmodule module.
+    case 'help.page.testmodule':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function testmodule_theme($existing, $type, $theme, $path) {
+  return array(
+    'test_module' => array(
+      'variables' => array('test_var' => NULL,'num_var' => 0),
+    ),
+  );
+}
+
